@@ -3,7 +3,7 @@ let newText = "https://api.spaceflightnewsapi.net/v4/articles/";
  async function showArticles() { 
   let response =  await fetch(newText);
   let data = await response.json();
-let results = data.results;
+  let results = data.results;
   console.log (data); 
 
   for (let i = 0; i< results.length ; i++) {
